@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #031f37;
+    position: relative;
+}
+
+.containerwrap {
+    position: absolute;
+    display: inline;
+
+    width: 25vw;
+    height: 80%;
+    left: 20vw;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, rgba(16, 84, 147, 1) 47%, rgba(8, 54, 104, 1) 100%);
+    clip-path: polygon(0 0, 21% 0, 29% 4%, 96% 4%, 96% 70%, 100% 72%, 100% 89%, 96% 93%, 96% 100%, 0 100%);
+}
+
+.containerwrap::after {
+    content: '';
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    width: 90%;
+    height: 93%;
+    clip-path: polygon(0 5%, 5% 0, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%);
+    background-color: #60daf2;
+}
+
+.containerwrap::before {
+    content: '';
+    position: absolute;
+    transform: scale(0.97);
+    box-shadow: 0px 0px 1vw 0.4vw #60daf2 inset;
+    z-index: 1;
+    left: 3%;
+    top: 5%;
+    width: 90%;
+    height: 93%;
+    clip-path: polygon(0 5%, 5% 0, 95% 0, 100% 5%, 100% 60%, 97% 63%, 97% 80%, 100% 83%, 100% 95%, 95% 100%, 5% 100%, 0 95%);
+    background: linear-gradient(90deg, rgba(16, 84, 147, 1) 47%, rgba(8, 54, 104, 1) 100%);
+}
+
+.listcar {
+    content: '';
+    position: absolute;
+    overflow-y: auto;
+
+    z-index: 1;
+    left: 7%;
+    top: 9%;
+    width: 80%;
+    height: 85%;
+
+}
+
+.listcar::-webkit-scrollbar {
+
+    width: 0vw;
+
+}
+
+.box_car {
+    padding: 0.5vw;
+    position: relative;
+    margin-top: 0.5vw;
+    width: 100%;
+    height: 5vw;
+    border-radius: 0.5vw;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0vw 0.2vw #60daf2 inset;
+
+}
+.button1 { 
+    top: 3.3vw; 
+    right: 1vw;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.6vw;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    
+    padding-top: 0.2vw;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 1vw;
+    width: 20%;
+    height: 1.2vw;
+ transition: 0.3s;
+  
+   text-align: center;
+}
+.button1:hover{
+    box-shadow: 0px 0px 0vw 0.1vw #60daf2 inset;
+}
+.btn-hover {
+
+
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1vw;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    border-radius: 1vw;
+    width: 20%;
+    height: 1.8vw;
+    padding-top: 0.1vw;
+   
+    color: #fff;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    top: 1vw; 
+    right: 1vw;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align:center;
+  
+
+
+    border-radius: 1vw;
+   
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+ 
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.col2 {  
+    
+    padding: 0.5vw;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1vw;
+    position: relative;
+    color: white;
+    width: 75%;
+    height: 2vw;
+    overflow: hidden;
+  
+   text-align: center;
+}
+
+.registration ,.car_body { 
+    overflow: hidden;
+    position: absolute;
+    width: 35%;
+  
+    left:  0.3vw;
+}
+
+.namecar,.car_oil {
+    overflow: hidden;
+    position: absolute;
+    width: 57%;
+ 
+    right: 0.3vw;
+}
+.car_body { 
+    font-size: 0.7vw;
+  
+    width: 35%;
+}
+
+.car_oil {
+    width: 57%;
+    font-size: 0.7vw;
+
+}
+.car_body>.progress_bar{
+    overflow: hidden;
+    margin-top: 0.1vw;
+    margin-left: 15%;
+    width: 75%;
+    height: 0.3vw;
+    border-radius: 2vw;
+    background-color: #ffffff;
+}
+.progress_bar{
+    overflow: hidden;
+    margin-top: 0.1vw;
+    margin-left: 25%;
+    width: 50%;
+    height: 0.3vw;
+    border-radius: 2vw;
+    background-color: #ffffff;
+}
+.data_progress{
+    border-radius: 2vw;
+    height: 100%;
+    width: 50%;
+    background-color: #60daf2;
+}
+.tagmain {
+    bottom: 0;
+    position: absolute;
+    font-family: 'Chakra Petch', sans-serif;
+    z-index: 99;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    width: 15vw;
+    height: 1.5vw;
+    left: 23vw;
+    top: 11%;
+    transform: translate(-50%, -50%);
+
+}
